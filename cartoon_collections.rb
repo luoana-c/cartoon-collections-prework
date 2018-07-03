@@ -13,8 +13,14 @@ new_planeteer = []
   return new_planeteer
 end
 
-def long_planeteer_calls# code an argument here
-  # Your code here
+def long_planeteer_calls(calls)
+  long_calls = []
+  calls.each do |call|
+    if call.length> 4
+      long_calls.push(call)
+    end
+  end
+  long_calls == calls
 end
 
 def find_the_cheese# code an argument here
