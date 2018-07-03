@@ -31,6 +31,6 @@ def find_the_cheese(string_array)
       cheese_included.push(cheese)
     end
   end
-  return cheese_included
+  return cheese_included.first
 end
 
