@@ -5,10 +5,12 @@ def roll_call_dwarves(dwarves)
 end
 
 def summon_captain_planet(planeteer_calls)
+new_planeteer = []
   planeteer_calls.collect do |planeteer|
-    planeteer = "#{planeteer.capitalize!}!"
+    planeteer = "#{planeteer.capitalize}!"
+    new_planeteer.push(planeteer)
   end
-  return planeteer_calls
+  return new_planeteer
 end
 
 def long_planeteer_calls# code an argument here
