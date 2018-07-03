@@ -20,7 +20,7 @@ def long_planeteer_calls(calls)
       long_calls.push(call)
     end
   end
-  long_calls == calls
+  long_calls.length > 0
 end
 
 def find_the_cheese# code an argument here
